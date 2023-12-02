@@ -1,5 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Influencia de los medios de comunicacion en la opinion publica</title>
+	<title>Influencia de los medios en la opinion publica</title>
 </head>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #873392;
+		}
+		header {
+			background-color: #C6B5D9;
+			color: #873392;
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+			background-color: #BF83F3;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+			margin: 0px;
+		}
+		article{
+			background-color: #BF83F3 ;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		section{
+			background-color: #DEDEDE;
+			padding: 20px;
+			margin: 20px;
+			border:	1px solid #ccc;
+			border-radius: 5px;
+		}
+		aside{
+			background-color: #832190;
+			color: #000000;
+			padding: 10px;
+			text-align: left;
+		}
+		footer{
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+        .form-container {
+            margin-right: 20px;
+        }
+
+        .form-container input {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+	</style>
+	 <script>
+        function guardarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var ciudad = document.getElementById("ciudad").value;
+            var pais = document.getElementById("pais").value;
+        }
+
+        function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            // Redirigir a la página de búsqueda de Google
+            window.location.href = url;
+        }
+    </script>
+<body>
+	<header>
+		<h1>Influencia de los medios en la opinion publica</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="infraestructura.html"></a>medio de comunicacion</li>
+			<li><a href="sistemaeducativo.html">Impacto</a></li>
+			<li><a href="profesores.html">sociedad</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h2>Impacto en la sociedad</h2>
+		<p>Los medios de comunicación deciden qué información se difunde y qué se omiten. Esto implica que los ciudadanos dependen de ellos para obtener gran parte de su conocimiento sobre temas importantes. Como resultado, los medios pueden moldear la opinión pública al decidir qué historias se destacan y cuáles se ignoran.Los medios de comunicación tienen la capacidad de persuadir a través de su presentación de la información y uso de estrategias de persuasión. Pueden utilizar técnicas de manipulación para influir en las opiniones de las personas, como la repetición constante de ciertos mensajes o la utilización de imágenes impactantes. Esto puede moldear las opiniones de la audiencia e influir en su comportamiento y actitudes.También influyen en las opiniones al elegir los temas que se discuten y dan cobertura. Al decidir qué temas son considerados importantes y relevantes, los medios pueden influir en la agenda pública, estableciendo qué temas deben ser debatidos y cuáles se ignoran. Esto puede limitar la diversidad de opiniones y limitar la comprensión completa de los problemas.</p>
+	</article>
+	<section>
+
+		<h2>Fake news</h2>
+		<p>El impacto de las noticias falsas (o fake news) en la sociedad puede ser bastante perjudicial. Estas noticias pueden influir negativamente en las opiniones y decisiones de las personas, y en muchos casos, pueden causar conflictos, polarización y desinformación.
+ 		Uno de los principales impactos de las noticias falsas es la creación de desconfianza en los medios de comunicación tradicionales y en las fuentes de información confiables. Esto puede llevar a que las personas busquen información en fuentes poco creíbles o en redes sociales, lo que perpetúa la propagación de noticias falsas.
+		Además, las noticias falsas pueden promover estereotipos, prejuicios o discriminación hacia determinados grupos de personas. Estas noticias suelen ser utilizadas para difundir información errónea o distorsionada sobre migrantes, minorías étnicas o religiosas, entre otros.</p>
+		<div class="image-container">
+	</section>
+	<section>
+		   <div class="form-container">
+            <h2>Guardar Datos</h2>
+            <form onsubmit="guardarDatos(); return false;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad"><br>
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais"><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+	</section>
+	<aside>
+		<h3>Otros links</h3>
+		<ul>
+			<li><a href="#">NOTICIAS FALSAS DE MANERA GLOBAL</li>
+			<li><a href="#">¿cómo sabemos que es verdad lo que leemos?</li>
+		</ul>
+	</aside>
+	<aside>
+		<h3>Buscar en Google</h3>
+        <form onsubmit="buscarGoogle(); return false;">
+            <input type="text" id="busqueda" placeholder="Buscar en Google">
+            <input type="submit" value="Buscar">
+        </form>
+		<h3>Video de youtube</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/FhDovaCfkhY?si=OFer9tHA7UHC1zCF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</aside>
+	<footer>
+		&copy; Impacto de los medios de comunicacion en la sociedad
+	</footer>
+</body>
+</html>
